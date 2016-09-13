@@ -17,9 +17,10 @@ $(document).ready(function() {
 
     $(document).on("click", '.advantage', function(e) {
         var advantage = $(this).closest(".adv-wrapper");
-        adv = $(this).closest(".advantage");
+        var adv = $(this).closest(".advantage");
         advantage.find(".dropdown-item").stop().slideToggle(400);
         advantage.toggleClass("active");
+        $(this).find(".arrow-bottom").toggleClass('active');
         adv.toggleClass("active");
     });
 

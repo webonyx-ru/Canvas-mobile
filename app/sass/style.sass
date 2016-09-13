@@ -5,1303 +5,1281 @@
 $icons-spacing: 15px
 @import fonts.css
 
-
 //MAIN
 
 .ovh
-	overflow: hidden
+    overflow: hidden
 
 .wrapper
-	max-width: 768px
-	min-width: 320px
-	margin: 0 auto
-	overflow: hidden
+    max-width: 768px
+    min-width: 320px
+    margin: 0 auto
+    overflow: hidden
 
 .content-wrapper
-	padding-top: 46px
+    padding-top: 46px
 
 .clearfix:after
-	clear: both
-	display: block
-	content: ""
-	
+    clear: both
+    display: block
+    content: ""
+
 .container
-	max-width: 768px
-	margin: 0 auto
-	padding: 0 20px
-	position: relative
-	&.nul
-		padding: 0
-	&.fs
-		padding: 0px 13px
-	
+    max-width: 768px
+    margin: 0 auto
+    padding: 0 20px
+    position: relative
+    &.nul
+        padding: 0
+    &.fs
+        padding: 0px 13px
+
 //breadcrums
 .breadcrums-link
-	display: inline-block
-	color: #231f20
-	font-family: PFBeauSansPro-Regular
-	font-size: 14px
-	font-weight: 400
-	margin-right: 4px
-	text-decoration: underline
-
+    display: inline-block
+    color: #231f20
+    font-family: PFBeauSansPro-Regular
+    font-size: 14px
+    font-weight: 400
+    margin-right: 4px
+    text-decoration: underline
 
 .content.main
-	margin-bottom: 34px
+    margin-bottom: 34px
 
 .breadcrums-link:after
-	display: inline-block
-	content: "/"
-	width: 2px
-	margin-left: 4px
+    display: inline-block
+    content: "/"
+    width: 2px
+    margin-left: 4px
 
 .this-page
-	font-family: PFBeauSansPro-Regular
-	font-size: 14px
-	font-weight: 400
-	letter-spacing: 0.4px
-	margin-right: 9px
-
+    font-family: PFBeauSansPro-Regular
+    font-size: 14px
+    font-weight: 400
+    letter-spacing: 0.4px
+    margin-right: 9px
 
 .breadcrums:last-child:after
-	display: block
-	content: ""
+    display: block
+    content: ""
 
 .breadcrums:last-child
-	text-decoration: none
-	cursor: none
+    text-decoration: none
+    cursor: none
 
 .breadcrums
-	padding-left: 15px
-	text-align: center
-	&.faq
-		margin-bottom: 22px
-	&.contacts
-		margin-bottom: 14px
+    padding-left: 15px
+    text-align: center
+    &.faq
+        margin-bottom: 22px
+    &.contacts
+        margin-bottom: 14px
 
 //end breadcrums
 
 .header__logo-wrapper
-	position: absolute
-	left: 20px
-	top: 11px
+    position: absolute
+    left: 20px
+    top: 11px
 
 .burger__stripe
-	display: block
-	background-color: #fff
-	width: 55%
-	height: 5px
-	position: absolute
-	top: 50%
-	+transform(translateY(-50%))
-	left: 23%
-	+trans
+    display: block
+    background-color: #fff
+    width: 55%
+    height: 5px
+    position: absolute
+    top: 50%
+    +transform(translateY(-50%))
+    left: 23%
+    +trans
 
-.burger__stripe.st-3 
-	top: 33%
+.burger__stripe.st-3
+    top: 33%
 
 .burger__stripe.st-1
-	top: 62%
+    top: 62%
 
 .burger__stripe.st-2
-	top: 48%
-
+    top: 48%
 
 .burger
-	position: absolute
-	top: 0px
-	right: 0px
-	background-color: #3d3b3b
-	height: 69px
-	width: 67px
-	cursor: pointer
-	+trans
-	&.active
-		+trans
-		display: none
+    position: absolute
+    top: 0px
+    right: 0px
+    background-color: #3d3b3b
+    height: 69px
+    width: 67px
+    cursor: pointer
+    +trans
+    &.active
+        +trans
+        display: none
 
 .buger__stripes
-	position: relative
-	width: 100%
+    position: relative
+    width: 100%
 
-
-.sliding-panel__arrow-right
-	+arr(5, 7, #fff, r)
-	position: absolute
-	top: 70px
-	right: 21px
-	top: 50%
-	+transform(translateY(-50%))
-
+.sliding-panel-link:after
+    +arr(5, 7, #fff, r)
+    content: ''
+    position: absolute
+    display: block
+    top: 70px
+    right: 21px
+    top: 50%
+    +transform(translateY(-50%))
 
 .sliding-panel-item
-	display: block
-	line-height: 24px
-	position: relative
-	border-bottom: 1px solid #101010
-	&:after
-		position: absolute
-		bottom: 0
-		left: 0
-		width: 100%
-		height: 1px
-		background-color: #4a4747
-		content: ""
-
+    display: block
+    line-height: 24px
+    position: relative
+    border-bottom: 1px solid #101010
+    &:after
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 1px
+        background-color: #4a4747
+        content: ""
 
 .sliding-panel-list
-	padding: 60px 0
+    padding: 60px 0
 
 .sliding-panel-link
-	text-transform: uppercase
-	display: block
-	color: white
-	font-family: Arimo-Bold
-	font-size: 18px
-	font-weight: 400
-	padding: 23px 51px 20px 44px
-	&:hover
-		background-color: #10a3ff
+    text-transform: uppercase
+    display: block
+    color: white
+    font-family: Arimo-Bold
+    font-size: 18px
+    font-weight: 400
+    padding: 23px 51px 20px 44px
+    &:hover
+        background-color: #10a3ff
 
-	
 .btn-call
-	z-index: 99
-	position: fixed
-	width: 53px
-	height: 55px
-	top: 415px
-	right: 10px
-	background-color: rgb(16, 163, 255)
-	&:after
-		+sprite(phone, "abs_middle")
-		content: ""
-	&:hover
-		background-color: rgb(16, 163, 255)*0.9
+    z-index: 99
+    position: fixed
+    width: 53px
+    height: 55px
+    bottom: 10px
+    right: 10px
+    background-color: rgb(16, 163, 255)
+    &:after
+        +sprite(phone, "abs_middle")
+        content: ""
+    &:hover
+        background-color: rgb(16, 163, 255)*0.9
 
 .sliding-panel
-	z-index: 100
-	overflow: auto
-	min-width: 320px
-	position: fixed
-	top: 0px
-	background-color: rgba(42, 38, 39, 0.9)
-	height: 100%
-	width: 100%
-	right: 100%
-	+trans()
-	&.active
-		right: 0%
-		overflow: auto
-	
-.header 
-	//position: absolute
-	top: 0px
-	z-index: 2
-	left: 0
-	height: 69px
-	width: 100%
-	left: 0
-	&.main
-		background-color: rgba(255, 255, 255, 0.9)
+    z-index: 100
+    overflow: auto
+    min-width: 320px
+    position: fixed
+    top: 0px
+    background-color: rgba(42, 38, 39, 0.9)
+    height: 100%
+    width: 100%
+    right: 100%
+    +trans()
+    &.active
+        right: 0%
+        overflow: auto
+
+.header
+    //position: absolute
+    top: 0px
+    z-index: 2
+    left: 0
+    height: 69px
+    width: 100%
+    left: 0
+    &.main
+        background-color: rgba(255, 255, 255, 0.9)
 
 .sliding-panel__close
-	position: absolute
-	top: 0px
-	right: -8px
-	//background-color: inherit
-	height: 70px
-	width: 70px
-	padding: 10px 14px
-	cursor: pointer
-	+trans
-	&:before
-		display: block
-		background-color: #fff
-		width: 40%
-		height: 5px
-		position: absolute
-		top: 50%
-		content: ""
-		+transform(translateY(-50%))
-		+transform(translateY(-50%) rotate(45deg))
-	&:after
-		display: block
-		background-color: #fff
-		width: 40%
-		height: 5px
-		position: absolute
-		top: 50%
-		content: ""
-		+transform(translateY(-50%))
-		+transform(translateY(-50%) rotate(-45deg))
+    position: absolute
+    top: 0px
+    right: 0px
+    height: 60px
+    width: 60px
+    padding: 10px 35px
+    cursor: pointer
+    +trans
+    &:before
+        display: block
+        background-color: #fff
+        width: 40%
+        height: 5px
+        position: absolute
+        top: 50%
+        content: ""
+        +transform(translateY(-50%))
+        +transform(translateY(-50%) rotate(45deg))
+    &:after
+        display: block
+        background-color: #fff
+        width: 40%
+        height: 5px
+        position: absolute
+        top: 50%
+        content: ""
+        +transform(translateY(-50%))
+        +transform(translateY(-50%) rotate(-45deg))
 
 .first-screen
-	z-index: 1
-	background-image: url(../img/main_header.jpg)
-	background-repeat: no-repeat
-	background-position: center -70px
-	background-size: cover
-	position: relative
-	padding-top: 53px
-	padding-bottom: 10px
-	padding-right: 0
-	margin-bottom: 22px
+    z-index: 1
+    background-image: url(../img/main_header.jpg)
+    background-repeat: no-repeat
+    background-position: center -70px
+    background-size: cover
+    position: relative
+    padding-top: 53px
+    padding-bottom: 10px
+    padding-right: 0
+    margin-bottom: 22px
 
 .header__title
-	text-align: center
-	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.77)
-	color: white
-	font-size: 26px
-	font-family: PFBeauSansPro-bold
-	font-weight: 500
-	line-height: 28px
-	margin-bottom: 26px
-	letter-spacing: -0.1px
-
-
+    text-align: center
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.77)
+    color: white
+    font-size: 26px
+    font-family: PFBeauSansPro-bold
+    font-weight: 500
+    line-height: 28px
+    margin-bottom: 26px
+    letter-spacing: -0.1px
 
 //content
 
 
 .content-title.install
-	margin-bottom: 45px
+    margin-bottom: 45px
 
 .install-units
-	margin-bottom: 35px
+    margin-bottom: 35px
 
 .icon-flag
-	+sprite(britain-flag)
-	position: absolute
-	left: 0
+    +sprite(britain-flag)
+    position: absolute
+    left: 0
 
 .prod-wrapper
-	text-align: center
-	//margin-bottom: 23px
-	position: relative
-	//width: 255px
-	//margin: 0 autobu
-	//margin-top: 22px
+    text-align: center
+    //margin-bottom: 23px
+    position: relative
+//width: 255px
+//margin: 0 autobu
+//margin-top: 22px
 
 .producer
-	margin-bottom: 23px
+    margin-bottom: 23px
 
 .made-in
-	margin-bottom: 3px
-	color: rgb(35, 31, 32)
-	letter-spacing: 0.3px	
-	line-height: 1.5em
-	letter-spacing: 0.4px
-	margin-left: 1px
+    margin-bottom: 3px
+    color: rgb(35, 31, 32)
+    letter-spacing: 0.3px
+    line-height: 1.5em
+    letter-spacing: 0.4px
+    margin-left: 1px
 
 .producer__info
-	height: 47px
-	text-align: left
-	padding-left: 118px
-	
+    height: 47px
+    text-align: left
+    padding-left: 118px
+
 .cont1
-	padding: 0 38px
+    padding: 0 38px
 
 .producer__site-link
-	text-decoration: underline
-	display: inline-block
+    text-decoration: underline
+    display: inline-block
 
 .btn
-	display: inline-block
-	background-color: inherit
-	border: 1px solid #999
-	color: #231f20
-	font-family: PFBeauSansPro-light
-	font-size: 16px
-	font-weight: 400
-	width: 280px
-	&.more
-		padding: 10px 0 13px 0
-		letter-spacing: 0.2px
-		line-height: 1.4em
-	&.watch-all-honors
-		background-image: inherit
-		padding: 13px 0 16px 0
-		color: white
-		font-family: PFBeauSansPro-Regular
-		font-size: 16px
-		font-weight: 400
-		letter-spacing: 0.4px
-		line-height: 1em
-		&:hover
-			background-color: #fff
-			color: black
-	&.show-more
-		padding: 13px 0 13px 0
-		letter-spacing: 0.5px
-		line-height: 1.2em
-	&.instr-download
-		padding: 12px 0 12px 0
-		margin-bottom: 40px
-		letter-spacing: 0.5px
+    display: inline-block
+    background-color: inherit
+    border: 1px solid #999
+    color: #231f20
+    font-family: PFBeauSansPro-light
+    font-size: 16px
+    font-weight: 400
+    width: 280px
+    &.more
+        padding: 10px 0 13px 0
+        letter-spacing: 0.2px
+        line-height: 1.4em
+    &.watch-all-honors
+        background-image: inherit
+        padding: 13px 0 16px 0
+        color: white
+        font-family: PFBeauSansPro-Regular
+        font-size: 16px
+        font-weight: 400
+        letter-spacing: 0.4px
+        line-height: 1em
+        &:hover
+            background-color: #fff
+            color: black
+    &.show-more
+        padding: 13px 0 13px 0
+        letter-spacing: 0.5px
+        line-height: 1.2em
+    &.instr-download
+        padding: 12px 0 12px 0
+        margin-bottom: 40px
+        letter-spacing: 0.5px
 
 .btn:hover
-	background-color: #10a3ff
-	color: #fff
-	border: 1px solid transparent
-    
+    background-color: #10a3ff
+    color: #fff
+    border: 1px solid transparent
+
 //advantages
 
 .work-speed-screen
-	text-align: center
-	background-image: url(../img/work-speed.jpg)
-	background-repeat: no-repeat
-	background-position: center center
-	background-size: cover
-	margin-top: 30px
-	padding: 105px 20px 27px 20px
-
+    text-align: center
+    background-image: url(../img/work-speed.jpg)
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+    margin-top: 30px
+    padding: 105px 20px 27px 20px
 
 .work-speed__icon-item
-	+sprite(item-icon)
-	text-align: center
-	margin-bottom: 10px
+    +sprite(item-icon)
+    text-align: center
+    margin-bottom: 10px
 
 .work-speed__text
-	max-width: 250px
-	text-align: center
-	color: white
-	font-family: PFBeauSansPro-Semibold
-	font-size: 20px
-	font-weight: 100
-	line-height: 23px
-	margin: 0 auto
-	letter-spacing: 0.2px
+    max-width: 250px
+    text-align: center
+    color: white
+    font-family: PFBeauSansPro-Semibold
+    font-size: 20px
+    font-weight: 100
+    line-height: 23px
+    margin: 0 auto
+    letter-spacing: 0.2px
 
 .advantage
-	width: 100%
-	background-color: white
-	padding: 21px 31px 21px 90px
-	box-shadow: -3px 0 3px rgba(23, 23, 23, 0.33)
-	position: relative
-	cursor: pointer
-	&.active
-		background-color: white*0.9
+    width: 100%
+    background-color: white
+    padding: 21px 31px 21px 90px
+    box-shadow: -3px 0 3px rgba(23, 23, 23, 0.33)
+    position: relative
+    cursor: pointer
+    &.active
+        background-color: white*0.9
 
-	&:hover
-		background-color: white*0.9
-
+    &:hover
+        background-color: white*0.9
 
 .advantage-text
-	font-size: 18px
-	font-weight: 100
-	line-height: 24px
-	color: rgb(36, 38, 40)
-	font-family: PFBeauSansPro-Regular
-
+    font-size: 18px
+    font-weight: 100
+    line-height: 24px
+    color: rgb(36, 38, 40)
+    font-family: PFBeauSansPro-Regular
 
 .speed
-	+sprite(speed-icon)
+    +sprite(speed-icon)
 
 .advantage-icon
-	position: absolute
-	left: 24px
-	top: 50%
-	+transform(translateY(-50%))
-
+    position: absolute
+    left: 24px
+    top: 50%
+    +transform(translateY(-50%))
 
 .icon-speed
-	+sprite(speed-icon)
+    +sprite(speed-icon)
 
 .icon-weather
-	+sprite(weather-icon)
-	left: 35px
+    +sprite(weather-icon)
+    left: 35px
 
 .icon-equipment
-	+sprite(equipment-icon)
+    +sprite(equipment-icon)
 
 .icon-rectangle
-	+sprite(rectangle-1)
+    +sprite(rectangle-1)
 
 .icon-management
-	+sprite(management-icon)
+    +sprite(management-icon)
 
 .arrow-bottom-icon
-	+sprite(arrow-bottom)
+    +sprite(arrow-bottom)
 
 .arrow-bottom
-	+arr(7, 7, #10a3ff, b)
-	position: absolute
-	right: 30px
-	top: 50%
-	+transform(translateY(-50%))
-
+    +arr(8, 7, #10a3ff, b)
+    position: absolute
+    right: 30px
+    top: 50%
+    +transform(translateY(-50%))
+    +trans()
+    &.active
+        transform: rotate(-180deg)
 
 .dropdown-item
-	display: none
-	width: 100%
-	background-color: white
-	padding: 25px
-	box-shadow: -3px 0 3px rgba(23, 23, 23, 0.33)
-	position: relative
-	&.active
-		display: block
+    display: none
+    width: 100%
+    background-color: white
+    padding: 25px
+    box-shadow: -3px 0 3px rgba(23, 23, 23, 0.33)
+    position: relative
+    &.active
+        display: block
 
 //EMPLOYMENT
 
 .emp-bottom
-	padding: 22px 20px 32px 20px
-	background-color: #f5f5f4
+    padding: 22px 20px 32px 20px
+    background-color: #f5f5f4
 
 .employments
-	width: 100%
+    width: 100%
 
 .employment-title
-	border-top: 1px solid #e0e0df
-	background: linear-gradient(to bottom, #eee, #f2f2f1)
-	width: 100%
-	padding: 22px 20px 23px 21px
-	text-align: center
-	color: rgb(35, 31, 32)
-	font-family: PFBeauSansPro-Semibold
-	font-size: 20px
-	letter-spacing: 0.1px
-	line-height: 1.2em
-	//font-weight: 600
+    border-top: 1px solid #e0e0df
+    background: linear-gradient(to bottom, #eee, #f2f2f1)
+    width: 100%
+    padding: 22px 20px 23px 21px
+    text-align: center
+    color: rgb(35, 31, 32)
+    font-family: PFBeauSansPro-Semibold
+    font-size: 20px
+    letter-spacing: 0.1px
+    line-height: 1.2em
+//font-weight: 600
 
 .arrow-right
-	+arr(10, 10, #fff, r)
-	position: absolute
-	right: 8px
-	top: 50%
-	+transform(translateY(-50%))
-	padding-left: 10px
+    +arr(10, 10, #fff, r)
+    position: absolute
+    right: 8px
+    top: 50%
+    +transform(translateY(-50%))
+    padding-left: 10px
 
 .arrow-right-wrapper
-	position: absolute
-	bottom: 0px
-	right: 0px
-	content: ""
-	border-left: 1px solid #1c8ed5
-	width: 45px
-	height: 100%
-	cursor: pointer
-
-
+    position: absolute
+    bottom: 0px
+    right: 0px
+    content: ""
+    border-left: 1px solid #1c8ed5
+    width: 45px
+    height: 100%
+    cursor: pointer
 
 .arrow-right:before
-	display: block
-	content: ""
-	position: absolute
-	bottom: 0
-	right: 0
-	border-left: 1px solid black
+    display: block
+    content: ""
+    position: absolute
+    bottom: 0
+    right: 0
+    border-left: 1px solid black
 
 .emp-item
-	background-position: center center
-	background-size: cover
-	padding: 0
-	text-align: right
-	position: relative
+    background-position: center center
+    background-size: cover
+    padding: 0
+    text-align: right
+    position: relative
 
 .emp-img-wrapper
-	font-size: 0
-	line-height: 0
+    font-size: 0
+    line-height: 0
 
 .emp-text-wrapper
-	position: absolute
-	bottom: 0px	
-	width: 100%
-	background-color: rgba(16, 163, 255, 0.9)
-	padding: 11px 5px 5px 5px
-	padding-right: 62px
-	letter-spacing: -0.1px
-	line-height: 1.3em
+    position: absolute
+    bottom: 0px
+    width: 100%
+    background-color: rgba(16, 163, 255, 0.9)
+    padding: 6px 5px 6px 5px
+    padding-right: 62px
+    letter-spacing: -0.1px
+    line-height: 1.3em
 
 .emp-text
-	text-align: right
-	color: white
-	font-family: Arimo
-	font-size: 16px
-	font-weight: 700
-	text-transform: uppercase
-	
-.emp-img
-	width: 100%
-	margin: 0
-	padding: 0
+    text-align: right
+    color: white
+    font-family: Arimo
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
 
+.emp-img
+    width: 100%
+    margin: 0
+    padding: 0
 
 .solution
-	background: #272b38 url(../img/map-image.png) center center no-repeat
-	padding-top: 26px
-	margin-bottom: 25px
-	padding-bottom: 40px
+    background: #272b38 url(../img/map-image.png) center center no-repeat
+    padding-top: 26px
+    margin-bottom: 25px
+    padding-bottom: 40px
 
 .solution__text
-	color: white
-	font-family: Arimo
-	font-size: 15px
-	font-weight: 400
-	line-height: 21px 
-
+    color: white
+    font-family: Arimo
+    font-size: 15px
+    font-weight: 400
+    line-height: 21px
 
 //exp-mark
 
 .cooperation .container
-	padding: 0 15px
+    padding: 0 15px
 
 .exp-mark
-	margin-bottom: -5px
+    margin-bottom: -5px
 
 .exp__item
-	border-bottom: 2px solid #242628
-	padding-bottom: 25px
-	margin-bottom: 30px
-	&:last-child
-		border: none
+    border-bottom: 2px solid #242628
+    padding-bottom: 25px
+    margin-bottom: 30px
+    &:last-child
+        border: none
 
 .exp-mark__title
-	color: #231f20
-	font-family: PFBeauSansPro-Regular
-	font-size: 20px
-	font-weight: 600
+    color: #231f20
+    font-family: PFBeauSansPro-Regular
+    font-size: 20px
+    font-weight: 600
 
 .exp-mark__text
-	color: #231f20
-	font-family: Arimo
-	font-size: 15px
-	font-weight: 400
-	line-height: 21px
-	margin-bottom: 55px
+    color: #231f20
+    font-family: Arimo
+    font-size: 15px
+    font-weight: 400
+    line-height: 21px
+    margin-bottom: 55px
 
 .theguardian
-	width: 213px
+    width: 213px
 
 .time
-	width: 120px
+    width: 120px
 
 .logo-wc-com
-	width: 127px
+    width: 127px
 
 .exp__logo-wrapper
-	width: 100%
+    width: 100%
 
 .exp__logo
-	margin: 0 auto
-	margin-bottom: 15px
+    margin: 0 auto
+    margin-bottom: 15px
 
 //honors
 .honors
-	background-image: url(../img/awards-background.jpg)
-	background-repeat: no-repeat
-	background-size: cover
-	padding-top: 23px
-	padding-bottom: 50px
+    background-image: url(../img/awards-background.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    padding-top: 23px
+    padding-bottom: 50px
 
 .honors__title
-	text-align: center
-	margin-bottom: 27px
-	color: white
-	font-family: PFBeauSansPro-Regular
-	font-size: 20px
-	font-weight: 600
-	
+    text-align: center
+    margin-bottom: 27px
+    color: white
+    font-family: PFBeauSansPro-Regular
+    font-size: 20px
+    font-weight: 600
+
 .honors-units
-	margin-bottom: 67px
+    margin-bottom: 67px
 
 .railtex
-	width: 200px
+    width: 200px
 
 .rd100
-	width: 112px
+    width: 112px
 
 .material
-	width: 256px
+    width: 256px
 
 .honors__logo
-	margin: 0 auto
-	margin-bottom: 7px
+    margin: 0 auto
+    margin-bottom: 7px
 
 .honors__description
-	text-align: center
-	margin-bottom: 40px
-	color: white
-	font-family: Arimo
-	font-size: 15px
-	font-weight: 400
-	line-height: 18px
+    text-align: center
+    margin-bottom: 40px
+    color: white
+    font-family: Arimo
+    font-size: 15px
+    font-weight: 400
+    line-height: 18px
 
 //cooperation
 .cooperation
-	//padding-top: 35px
-	padding-bottom: 43px
-	&.faq	
-		padding-top: 35px
-		margin-bottom: 0
-		border-top: 3px solid #f5f5f5
+    //padding-top: 35px
+    padding-bottom: 43px
+    &.faq
+        padding-top: 35px
+        margin-bottom: 0
+        border-top: 3px solid #f5f5f5
 
 .cooperation__title
-	text-align: center
-	margin-bottom: 15px
-	color: #231f20
-	font-family: PFBeauSansPro-light
-	font-size: 20px
-	font-weight: 600
-	
+    text-align: center
+    margin-bottom: 15px
+    color: #231f20
+    font-family: PFBeauSansPro-light
+    font-size: 20px
+    font-weight: 600
 
 .cooperation__text
-	margin-bottom: 27px
-	color: #242628
-	font-family: Arimo
-	font-size: 16px
-	font-weight: 400
-	line-height: 24px
+    margin-bottom: 27px
+    color: #242628
+    font-family: Arimo
+    font-size: 16px
+    font-weight: 400
+    line-height: 24px
 
 .name-company, .telephone
-	width: 280px
-	height: 50px
-	text-align: center
-	background-color: white
-	border-radius: 100px
-	border: 1px solid grey
-	color: #242628
-	+phc(#5b5c5e)
-	font-family: Arimo
-	font-size: 14px
-	font-weight: 400
-	line-height: 14px
-	margin-bottom: 10px
-
+    width: 280px
+    height: 50px
+    text-align: center
+    background-color: white
+    border-radius: 100px
+    border: 1px solid grey
+    color: #242628
+    +phc(#5b5c5e)
+    font-family: Arimo
+    font-size: 14px
+    font-weight: 400
+    line-height: 14px
+    margin-bottom: 10px
 
 .btn-coop-send
-	background-color: #10a3ff
-	border-radius: 100px
-	color: white
-	font-family: Arimo
-	font-size: 18px
-	font-weight: 700
-	height: 50px
-	width: 280px
-
+    background-color: #10a3ff
+    border-radius: 100px
+    color: white
+    font-family: Arimo
+    font-size: 18px
+    font-weight: 700
+    height: 50px
+    width: 280px
+    &:hover
+        opacity: 0.8
 //FAQ
 
 .tab__listing
-	text-align: center
+    text-align: center
 
 .tabs
-	display: block
-	margin-bottom: 25px
+    display: block
+    margin-bottom: 25px
 
 .tab-item
-	display: inline-block
-	margin: 0px 5px 10px 0px
+    display: inline-block
+    margin: 0px 5px 10px 0px
 
 .tab-link
-	cursor: pointer
-	display: block
-	width: 100%
-	color: #272727
-	text-decoration: none
-	padding: 7px 10px
-	background-color: #efefef
-	+border-radius(16px)
-	font-family: PFBeauSansPro-Regular
-	font-size: 13px
-	font-weight: 400
-	text-transform: lowercase
-	&:hover
-		background-color: #dadada
-		box-shadow: inset -1px 0 1px rgba(0, 0, 0, 0.3)
-	&.active
-		background-color: #dadada
-		box-shadow: inset -1px 0 1px rgba(0, 0, 0, 0.3)
-
+    cursor: pointer
+    display: block
+    width: 100%
+    color: #272727
+    text-decoration: none
+    padding: 7px 10px
+    background-color: #efefef
+    +border-radius(16px)
+    font-family: PFBeauSansPro-Regular
+    font-size: 13px
+    font-weight: 400
+    text-transform: lowercase
+    &:hover
+        background-color: #dadada
+        box-shadow: inset -1px 0 1px rgba(0, 0, 0, 0.3)
+    &.active
+        background-color: #dadada
+        box-shadow: inset -1px 0 1px rgba(0, 0, 0, 0.3)
 
 .tab-content
-	display: none
-	padding-bottom: 41px
-	&.active
-		display: block
+    display: none
+    padding-bottom: 41px
+    &.active
+        display: block
 
 .tab-content-block
-	margin-bottom: 39px
-
+    margin-bottom: 39px
 
 //INSTALL
 .shapes
-	max-width: 666px
-	margin-bottom: 18px
-	height: 162px
+    max-width: 666px
+    margin-bottom: 18px
+    height: 162px
 
 .wrapper-gradient:after
-	width: 100%
-	height: 341px
-	position: absolute
-	top: 0
-	z-index: -1
-	background: linear-gradient(to bottom, #b0beca, #fff)
-	content: ""
+    width: 100%
+    height: 341px
+    position: absolute
+    top: 0
+    z-index: -1
+    background: linear-gradient(to bottom, #b0beca, #fff)
+    content: ""
 
 .shapes-left-side
-	width: 50%
-	float: left
-	text-align: center
+    width: 50%
+    float: left
+    text-align: center
 
 .shapes-right-side
-	width: 50%
-	float: right
-	text-align: center
+    width: 50%
+    float: right
+    text-align: center
 
 .shapes__icon.weather
-	+sprite(weather-icon-install)
+    +sprite(weather-icon-install)
 
 .shapes__icon.speed
-	+sprite(speed-icon-install)
+    +sprite(speed-icon-install)
 
 .shapes__red-shape
-	background-image: url(../img/shape-red.png)
-	background-repeat: no-repeat
-	height: 162px
-	width: 140px
-	display: inline-block
-	line-height: 133px
+    background-image: url(../img/hexagon-red.png)
+    background-repeat: no-repeat
+    height: 162px
+    width: 150px
+    display: inline-block
+    line-height: 133px
 
 .shapes__blue-shape
-	background-image: url(../img/shape-blue.png)
-	background-repeat: no-repeat
-	height: 162px
-	width: 140px
-	line-height: 145px
-	display: inline-block
-	
+    background-image: url(../img/hexagon-blue.png)
+    background-repeat: no-repeat
+    height: 162px
+    width: 150px
+    line-height: 145px
+    display: inline-block
+
 .shapes__title
-	color: white
-	font-family: PFBeauSansPro-semibold
-	font-size: 22px
-	font-weight: 100
-	&.b
-		margin-bottom: 4px
-	&.r
-		letter-spacing: 0.6px
-		margin-bottom: 4px
+    color: white
+    font-family: PFBeauSansPro-semibold
+    font-size: 22px
+    font-weight: 100
+    &.b
+        margin-bottom: 4px
+    &.r
+        letter-spacing: 0.6px
+        margin-bottom: 4px
 
 .shapes__text
-	color: white
-	font-family: PFBeauSansPro-semibold
-	font-size: 15px
-	font-weight: 100
-	line-height: 15px
+    color: white
+    font-family: PFBeauSansPro-semibold
+    font-size: 15px
+    font-weight: 100
+    line-height: 15px
 
 .shapes-content
-	display: inline-block
-	line-height: normal
-	vertical-align: middle
-	text-align: center
-	&.b
-		padding-top: 4px
-	&.r
-		padding-top: 8px
+    display: inline-block
+    line-height: normal
+    vertical-align: middle
+    margin-left: 6px
+    text-align: center
+    &.b
+        padding-top: 4px
+    &.r
+        padding-top: 8px
 
 .content-install .text-title
-	letter-spacing: 0.4px	
-	line-height: 1.2em
-
+    letter-spacing: 0.4px
+    line-height: 1.2em
 
 .slider
-	width: 240px
-	height: 240px
-	border-radius: 120px
-	position: absolute
-	margin: 0 auto
-	z-index: 5
-	background-repeat: no-repeat
-	float: left
-	overflow: hidden
+    width: 240px
+    height: 240px
+    border-radius: 120px
+    position: absolute
+    margin: 0 auto
+    z-index: 5
+    background-repeat: no-repeat
+    float: left
+    overflow: hidden
 
 .slider-wrapper
-	position: relative
-	width: 240px
-	height: 240px
-	border-radius: 120px
-	margin: 0 auto
-	z-index: 1
-	background-repeat: no-repeat
-	float: left
+    position: relative
+    width: 240px
+    height: 240px
+    border-radius: 120px
+    margin: 0 auto
+    z-index: 1
+    background-repeat: no-repeat
+    float: left
 
 .other-photos-icon
-	z-index: 10
-	position: absolute
-	bottom: 0
-	right: 5px
-	width: 62px
-	height: 62px
-	border-radius: 31px
-	background-color: rgba(16, 163, 255, 0.8)
-	box-shadow: -7px 0 11px rgba(0, 0, 0, 0.22)
-	padding: 13px 12px 13px 13px
-	cursor: pointer
-	&:after
-		+sprite(other-photos-icon, "abs_middle")
-		content: ""
-	&:hover
-		background-color: rgba(16, 163, 255, 0.8)*0.9
-
+    z-index: 10
+    position: absolute
+    bottom: 0
+    right: 5px
+    width: 62px
+    height: 62px
+    border-radius: 31px
+    background-color: rgba(16, 163, 255, 0.8)
+    box-shadow: -7px 0 11px rgba(0, 0, 0, 0.22)
+    padding: 13px 12px 13px 13px
+    cursor: pointer
+    &:after
+        +sprite(other-photos-icon, "abs_middle")
+        content: ""
+    &:hover
+        background-color: rgba(16, 163, 255, 0.8)*0.9
 
 .img-block
-	position: relative
-	max-width: 285px
-	margin: 0 auto
-	margin-bottom: 24px
+    position: relative
+    max-width: 285px
+    margin: 0 auto
+    margin-bottom: 24px
 
 .install-item
-	margin-bottom: 40px
+    margin-bottom: 40px
 
 .install-item .text
-	letter-spacing: 0.2px
-	line-height: 1.44em
+    letter-spacing: 0.2px
+    line-height: 1.44em
 
 .img-block__number
-	color: #e5e5e5
-	font-family: PFBeauSansPro-Semibold
-	font-size: 150px
-	font-weight: 700
-	line-height: 75px
-	position: absolute
-	right: -64px
-	top: 50%
-	+transform(translateY(-50%))
-	z-index: 0
+    color: #e5e5e5
+    font-family: PFBeauSansPro-Semibold
+    font-size: 150px
+    font-weight: 700
+    line-height: 75px
+    position: absolute
+    right: -64px
+    top: 50%
+    +transform(translateY(-50%))
+    z-index: 0
 
 .install__advantage
-	letter-spacing: 0.1px
-	line-height: 1.1em
-	color: white
-	font-family: Arimo-Bold
-	font-size: 16px
-	font-weight: 100 
-	text-align: left
-	background-color: #10a3ff
-	background-image: linear-gradient(to right, #10a3ff 0%, #10a3ff 30%, white 100%)
-	min-height: 62px
-	padding: 13px 0px 15px 25px
+    letter-spacing: 0.1px
+    line-height: 1.1em
+    color: white
+    font-family: Arimo-Bold
+    font-size: 16px
+    font-weight: 100
+    text-align: left
+    background-color: #10a3ff
+    background-image: linear-gradient(to right, #10a3ff 0%, #10a3ff 30%, white 100%)
+    padding: 15px 0px 15px 25px
 
 .text
-	color: rgb(35, 31, 32)
-	font-size: 15px
-	font-family: Arimo
-	font-weight: 400
-	line-height: 21px
-	margin-bottom: 35px
-	text-align: left
-	p
-		margin-bottom: 20px
-		&:last-child
-			margin-bottom: 0
-	&.faq
-		letter-spacing: 0.2px
-		line-height: 1.5em
+    color: rgb(35, 31, 32)
+    font-size: 15px
+    font-family: Arimo
+    font-weight: 400
+    line-height: 21px
+    margin-bottom: 35px
+    text-align: left
+    p
+        margin-bottom: 20px
+        &:last-child
+            margin-bottom: 0
+    &.faq
+        letter-spacing: 0.2px
+        line-height: 1.5em
 
 .text-title
-	font-family: PFBeauSansPro-SemiBold
-	font-size: 20px
-	font-weight: 100
-	color: black
-	text-align: left
-	margin-bottom: 15px
-	letter-spacing: 0.2px
-	&.red-line:after
-		display: block
-		width: 60px
-		height: 1px
-		background-color: #d52027
-		margin: 0 auto
-		margin-top: 18px
-		content: ""
+    font-family: PFBeauSansPro-SemiBold
+    font-size: 20px
+    font-weight: 100
+    color: black
+    text-align: left
+    margin-bottom: 15px
+    letter-spacing: 0.2px
+    &.red-line:after
+        display: block
+        width: 60px
+        height: 1px
+        background-color: #d52027
+        margin: 0 auto
+        margin-top: 18px
+        content: ""
 
-	&.grey-line:after
-		display: block
-		width: 38px
-		height: 1px
-		background-color: #848484
-		margin: 25px auto 21px
-		content: ""
-	
-	&.stars:before
-		+sprite(stars-icon)
-		margin: 0 auto
-		display: block
-		margin-bottom: 11px
-		content: ""
+    &.grey-line:after
+        display: block
+        width: 38px
+        height: 1px
+        background-color: #848484
+        margin: 25px auto 21px
+        content: ""
 
-	&.faq
-		margin-bottom: 16px
-		letter-spacing: 0.2px
-		line-height: 1.3em
-	
+
+
+    &.faq
+        margin-bottom: 16px
+        letter-spacing: 0.2px
+        line-height: 1.3em
+
+
+.stars
+    margin-bottom: 11px
+    text-align: center
+
+.stars-list
+    display: inline-block
+
+.star-icon
+    +sprite(star-icon)
+    display: inline-block
+    content: ""
+
 .white
-	color: white
+    color: white
 
 .install-item .container
-	margin-bottom: 20px
-
+    margin-bottom: 20px
 
 .slider-img
-	opacity: 0
-	width: 240px
-	height: 240px
-	position: absolute
-	margin: 0 auto
-	&.active
-		opacity: 1
-		+trans
+    opacity: 0
+    width: 240px
+    height: 240px
+    position: absolute
+    margin: 0 auto
+    &.active
+        opacity: 1
+        +trans
 
 .contacts__map
-	overflow: hidden
-	//max-width: 466px
-	margin: 0 auto
-	height: 338px
+    overflow: hidden
+    //max-width: 466px
+    margin: 0 auto
+    height: 338px
 
 .video__install
-	margin: 0 auto
-	margin-bottom: 57px
+    margin: 0 auto
+    margin-bottom: 57px
 
 .video
-	width: 281px
-	margin: 0 auto
+    width: 281px
+    margin: 0 auto
 //CONTACTS
 
 .contact-us
-	//margin-top: 27px
-	text-align: center
+    //margin-top: 27px
+    text-align: center
 
 .page__main-title
-	color: #231f20
-	font-family: PFBeauSansPro-semibold
-	font-size: 32px
-	font-weight: 700
-	margin-bottom: 37px
-	text-align: center
-	&.install
-		letter-spacing: 1px
-		line-height: 1.1em
-	&.faq
-		letter-spacing: -1.1px
-		line-height: 0.8em
-		margin-bottom: 42px
-	&.cont
-		letter-spacing: 0.7px
+    color: #231f20
+    font-family: PFBeauSansPro-semibold
+    font-size: 32px
+    font-weight: 700
+    margin-bottom: 37px
+    text-align: center
+    &.install
+        letter-spacing: 1px
+        line-height: 1.1em
+    &.faq
+        letter-spacing: -1.1px
+        line-height: 0.8em
+        margin-bottom: 42px
+    &.cont
+        letter-spacing: 0.7px
 
 .b-info__title
-	font-family: PFBeauSansPro-Light
-	font-size: 18px
-	font-weight: 600
-	line-height: 26px
+    font-family: PFBeauSansPro-Light
+    font-size: 18px
+    font-weight: 600
+    line-height: 26px
 
 .b-info__descr
-	font-family: Arimo
-	font-size: 14px
-	font-weight: 400
-	line-height: 26px
-	margin-bottom: 15px
-	line-height: 1.6em
-
+    font-family: Arimo
+    font-size: 14px
+    font-weight: 400
+    line-height: 26px
+    margin-bottom: 15px
+    line-height: 1.6em
 
 .b-info__com
-	font-family: Arimo
-	font-size: 22px
-	font-weight: 400
-	line-height: 28px
-	margin-bottom: 13px
+    font-family: Arimo
+    font-size: 22px
+    font-weight: 400
+    line-height: 28px
+    margin-bottom: 13px
 
 .b-info__address
-	font-family: Arimo
-	font-size: 14px
-	font-weight: 400
-	margin-bottom: 5px
-	letter-spacing: 0.2px
+    font-family: Arimo
+    font-size: 14px
+    font-weight: 400
+    margin-bottom: 5px
+    letter-spacing: 0.2px
 
 .info-uk, .info-ru
-	text-align: center
+    text-align: center
 
 .info-ru:after
-	height: 2px
-	background-color: #10a3ff
-	content: ""
-	display: block
-	margin-bottom: 33px
-	margin-top: 32px
+    height: 2px
+    background-color: #10a3ff
+    content: ""
+    display: block
+    margin-bottom: 33px
+    margin-top: 32px
 
 .map__image
-	width: 100%
+    width: 100%
 
 .b-info:after
-	display: block
-	content: ""
-	height: 2px
-	background-color: #10a3ff
-	margin-bottom: 33px
-	margin-top: 30px
+    display: block
+    content: ""
+    height: 2px
+    background-color: #10a3ff
+    margin-bottom: 33px
+    margin-top: 30px
 
 .contacts
-	margin: 0 auto
-	margin-bottom: 34px
-	text-align: center
-	padding-top: 10px
+    margin: 0 auto
+    margin-bottom: 34px
+    text-align: center
+    padding-top: 10px
 
 .b-n.b-info:after
-	display: none
+    display: none
 
 //FOOTER
 
 .bottom-gallery__img-block
-	float: left
-	width: 33.3%
-	font-size: 0
-	line-height: 0
-	position: relative
-
+    float: left
+    width: 33.3%
+    font-size: 0
+    line-height: 0
+    position: relative
 
 .size-it
-	margin-top: 70%
+    margin-top: 85%1
 
 .bottom-gallery__img_main
-	min-width: 100%
-	max-width: 150%
+    min-width: 100%
+    max-width: 100%
 
 .bottom-gallery__img
-	min-width: 100%
-	min-height: 100%
+    min-width: 100%
+    min-height: 100%
 
 .bottom-gallery__img-wrapper
-	width: 100%
-	position: absolute
-	height: 100%
-	top: 0
-	bottom: 0
-
+    width: 100%
+    position: absolute
+    height: 100%
+    top: 0
+    bottom: 0
 
 .bottom-gallery__images
-	font-size: 0
-	line-height: 0
-	
+    font-size: 0
+    line-height: 0
+
 .bottom-gallery__img-main-wrapper
-	line-height: 0
-	font-size: 0
-	width: 100%
+    line-height: 0
+    font-size: 0
+    width: 100%
 
 .footer__contacts
-	margin: 0px auto
-	max-width: 320px
-	padding-bottom: 52px
+    margin: 0px auto
+    max-width: 320px
+    padding-bottom: 52px
 
 .footer
-	padding-top: 45px
-	background-color: #231f20
-	position: relative
-	padding-bottom: 32px
-	margin: 0 auto
+    padding-top: 45px
+    background-color: #231f20
+    position: relative
+    padding-bottom: 32px
+    margin: 0 auto
 
 .footer__logo
-	width: 238px
-	margin: 0 auto
-	margin-bottom: 21px
+    width: 238px
+    margin: 0 auto
+    margin-bottom: 21px
 
 .info-block
-	margin-bottom: 41px
+    margin-bottom: 41px
 
 .map
-	margin-bottom: 34px
+    margin-bottom: 34px
 
 .footer-img
-	width: 100%
+    width: 100%
 
 .footer__contacts-item
-	padding-left: 71px
-	position: relative
-	margin-bottom: 30px
-	letter-spacing: 0.39px
-	&:last-child
-		margin-bottom: 0
-	
+    padding-left: 71px
+    position: relative
+    margin-bottom: 30px
+    letter-spacing: 0.39px
+    &:last-child
+        margin-bottom: 0
 
 .footer__phone-number
-	color: white
-	font-family: Arimo
-	font-size: 24px
-	font-weight: 700
-	margin-bottom: 6px
-	&:before
-		+sprite(phone-icon)
-		position: absolute
-		left: 37px
-		top: 2px
-		display: block
-		content: ""
-
+    color: white
+    font-family: Arimo
+    font-size: 24px
+    font-weight: 700
+    margin-bottom: 6px
+    &:before
+        +sprite(phone-icon)
+        position: absolute
+        left: 37px
+        top: 2px
+        display: block
+        content: ""
 
 .footer__contact-label
-	color: white
-	font-family: Arimo
-	font-size: 14px
-	font-weight: 400
+    color: white
+    font-family: Arimo
+    font-size: 14px
+    font-weight: 400
 
 .footer__copyright
-	text-align: center
-	max-width: 228px
-	margin: 0 auto
-	color: white
-	font-family: Arimo
-	font-size: 14px
-	font-weight: 400
-	letter-spacing: -0.2px
+    text-align: center
+    max-width: 228px
+    margin: 0 auto
+    color: white
+    font-family: Arimo
+    font-size: 14px
+    font-weight: 400
+    letter-spacing: -0.2px
 
 .fz14
-	font-size: 14px
+    font-size: 14px
 
 .fz15
-	font-size: 15px
+    font-size: 15px
 
 .fz16
-	font-size: 16px
+    font-size: 16px
 
 .fz18
-	font-size: 18px
+    font-size: 18px
 
 .fz13
-	font-size: 13px
+    font-size: 13px
 
 .fz19
-	font-size: 19px
+    font-size: 19px
 
 .fw600
-	font-weight: 600
+    font-weight: 600
 
 .mb0
-	margin-bottom: 0
-	
+    margin-bottom: 0
+
 .mb13
-	margin-bottom: 13px
+    margin-bottom: 13px
 
 .mb17
-	margin-bottom: 17px
+    margin-bottom: 17px
 
 .mb10
-	margin-bottom: 10px
+    margin-bottom: 10px
 
 .mb25
-	margin-bottom: 25px
+    margin-bottom: 25px
 
 .mb27
-	margin-bottom: 27px
+    margin-bottom: 27px
 
 .mb29
-	margin-bottom: 29px
+    margin-bottom: 29px
 
 .mb22
-	margin-bottom: 22px
+    margin-bottom: 22px
 
 .mb19
-	margin-bottom: 19px
+    margin-bottom: 19px
 
 .mb30
-	margin-bottom: 30px
+    margin-bottom: 30px
 
 .mb36
-	margin-bottom: 36px
+    margin-bottom: 36px
 
 .t-cen
-	text-align: center
+    text-align: center
 
 .t-lef
-	text-align: left
+    text-align: left
 
 .fw400
-	font-weight: 400
+    font-weight: 400
 
 .fw700
-	font-weight: 400
+    font-weight: 400
 
 .mb20
-	margin-bottom: 20px
+    margin-bottom: 20px
 
 .mb13
-	margin-bottom: 13px
+    margin-bottom: 13px
 
 .mb5
-	margin-bottom: 5px
+    margin-bottom: 5px
 
 .white
-	color: white
+    color: white
 
 .mb40
-	margin-bottom: 40px
-
+    margin-bottom: 40px
 
 .pr10
-	padding-right: 10px
+    padding-right: 10px
 
 .blue
-	color: #10a3ff
+    color: #10a3ff
 
 .ffspl
-	font-family: PFBeauSansPro-Light
+    font-family: PFBeauSansPro-Light
 
 .pb50
-	padding-bottom: 50px
+    padding-bottom: 50px
 
 .red-rect
-	background-color: #d52027
-	color: #fff
-	padding: 10px 6px 10px 6px
-	background-color: rgba(213, 32, 39, 0.9)
-	line-height: 1.2em
+    background-color: #d52027
+    color: #fff
+    padding: 10px 6px 10px 6px
+    background-color: rgba(213, 32, 39, 0.9)
+    line-height: 1.2em
 
 .ffhncr
-	font-family: HelveticaNeueCyr-Roman
-	letter-spacing: 0.4px
-	line-height: 1.4em
+    font-family: HelveticaNeueCyr-Roman
+    letter-spacing: 0.4px
+    line-height: 1.4em
 
 .lh18
-	line-height: 18px
+    line-height: 18px
 
 .lh21
-	line-height: 21px
+    line-height: 21px
 
 .mb10
-	margin-bottom: 10px
+    margin-bottom: 10px
 
 .mb25
-	margin-bottom: 25px
+    margin-bottom: 25px
 
 .mb45
-	margin-bottom: 45px
+    margin-bottom: 45px
 
 .mb48
-	margin-bottom: 48px
+    margin-bottom: 48px
 
 .ls01
-	letter-spacing: -0.1px
+    letter-spacing: -0.1px
 
 .ls02
-	letter-spacing: -0.2px
+    letter-spacing: -0.2px
 
 .lsp02
-	letter-spacing: 0.2px
+    letter-spacing: 0.2px
 
 .p018
-	padding: 0 18px
+    padding: 0 18px
 
 .ls02lh13
-	letter-spacing: 0.2px
-	line-height: 1.4em
-
-.p05
-	padding: 0 5px
+    letter-spacing: 0.2px
+    line-height: 1.4em
 
 .p012
-	padding: 0 12px
+    padding: 0 12px
 
 .ls02lh15
-	line-height: 1.5em
-	letter-spacing: 0.2px
+    line-height: 1.5em
+    letter-spacing: 0.2px
 
 .video__install .text-title
-	font-family: PFBeauSansPro-Bold
-	font-weight: 100
-	letter-spacing: 0
-	line-height: 1.2em
+    font-family: PFBeauSansPro-Bold
+    font-weight: 100
+    letter-spacing: 0
+    line-height: 1.2em
