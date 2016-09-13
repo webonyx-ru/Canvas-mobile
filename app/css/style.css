@@ -196,7 +196,7 @@ a, img, a:active, a:focus { outline: none; }
 
 .emp-img { width: 100%; margin: 0; padding: 0; }
 
-.solution { background: url(../img/map-image.png) center center no-repeat #272b38; background-color: #272b38; margin-bottom: 33px; padding-top: 26px; margin-bottom: 25px; padding-bottom: 40px; }
+.solution { background: #272b38 url(../img/map-image.png) center center no-repeat; padding-top: 26px; margin-bottom: 25px; padding-bottom: 40px; }
 
 .solution__text { color: white; font-family: Arimo; font-size: 15px; font-weight: 400; line-height: 21px; }
 
@@ -335,7 +335,7 @@ a, img, a:active, a:focus { outline: none; }
 .slider-img { opacity: 0; width: 240px; height: 240px; position: absolute; margin: 0 auto; }
 .slider-img.active { opacity: 1; -webkit-transition: all 0.5s ease 0s; -moz-transition: all 0.5s ease 0s; -o-transition: all 0.5s ease 0s; transition: all 0.5s ease 0s; }
 
-.contacts__map { overflow: hidden; max-width: 466px; margin: 0 auto; height: 338px; }
+.contacts__map { overflow: hidden; margin: 0 auto; height: 338px; }
 
 .video__install { margin: 0 auto; margin-bottom: 57px; }
 
