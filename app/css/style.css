@@ -283,6 +283,8 @@ a, img, a:active, a:focus { outline: none; }
 .shapes__icon.speed { background-image: url('../img/icons-s989a805627.png'); background-position: 0 -352px; background-repeat: no-repeat; overflow: hidden; display: inline-block; height: 22px; width: 40px; }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-resolution: 1.5dppx) { .shapes__icon.speed { background-image: url('../img/icons-2x-se4975faf27.png'); background-size: 111px auto; background-position: 0 -352px; height: 22px; width: 40px; } }
 
+.shapes-content-wrapper { position: relative; }
+
 .shapes__red-shape:after { content: ""; background-image: url(../img/hexagon-red.png); background-repeat: no-repeat; height: 170px; width: 156px; position: absolute; display: inline-block; line-height: 133px; z-index: 20; right: 4px; top: -6px; }
 
 .shapes__blue-shape:after { content: ""; background-image: url(../img/hexagon-blue.png); background-repeat: no-repeat; height: 170px; width: 156px; position: absolute; line-height: 145px; display: inline-block; z-index: 20; right: 6px; top: -6px; }
@@ -294,8 +296,8 @@ a, img, a:active, a:focus { outline: none; }
 .shapes__text { color: white; font-family: PFBeauSansPro-semibold; font-size: 15px; font-weight: 100; line-height: 15px; }
 
 .shapes-content { display: inline-block; line-height: normal; vertical-align: middle; text-align: center; position: absolute; z-index: 30; }
-.shapes-content.b { padding-top: 10px; margin-left: 16px; right: 25px; top: 23px; }
-.shapes-content.r { padding-top: 12px; margin-left: 12px; right: 20px; top: 12px; }
+.shapes-content.b { padding-top: 10px; margin-left: 16px; right: 25px; top: 23px; width: 107px; }
+.shapes-content.r { padding-top: 12px; margin-left: 12px; right: 20px; top: 12px; width: 107px; }
 
 .content-install .text-title { letter-spacing: 0.4px; line-height: 1.2em; }
 

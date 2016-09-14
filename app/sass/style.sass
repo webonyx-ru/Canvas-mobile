@@ -737,6 +737,10 @@ $icons-spacing: 15px
 .shapes__icon.speed
     +sprite(speed-icon-install)
 
+.shapes-content-wrapper
+    position: relative
+
+
 .shapes__red-shape:after
     content: ''
     background-image: url(../img/hexagon-red.png)
@@ -770,6 +774,7 @@ $icons-spacing: 15px
     font-weight: 100
     &.b
         margin-bottom: 4px
+
     &.r
         letter-spacing: 0.6px
         margin-bottom: 4px
@@ -793,12 +798,13 @@ $icons-spacing: 15px
         margin-left: 16px
         right: 25px
         top: 23px
-
+        width: 107px
     &.r
         padding-top: 12px
         margin-left: 12px
         right: 20px
         top: 12px
+        width: 107px
 
 .content-install .text-title
     letter-spacing: 0.4px
