@@ -14,6 +14,13 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+    $(document).on("click", '.sliding-panel-link', function(e) {
+        $(this).closest(".sliding-panel-item").toggleClass('active');
+        $(this).closest(".sliding-panel-item").find('.sliding-panel-dd').stop().slideToggle(400);
+        $(this).closest(".sliding-panel-link").toggleClass('active');
+        e.preventDefault();
+    });
+
 
     $(document).on("click", '.advantage', function(e) {
         var advantage = $(this).closest(".adv-wrapper");
