@@ -35,7 +35,7 @@ a, img, a:active, a:focus { outline: none; }
 
 .ovh { overflow: hidden; }
 
-.wrapper { max-width: 768px; min-width: 320px; margin: 0 auto; overflow: hidden; }
+.wrapper { min-width: 320px; margin: 0 auto; overflow: hidden; }
 
 .content-wrapper { padding-top: 46px; }
 
@@ -140,7 +140,7 @@ a, img, a:active, a:focus { outline: none; }
 
 .work-speed__text { max-width: 250px; text-align: center; color: white; font-family: PFBeauSansPro-Semibold; font-size: 20px; font-weight: 100; line-height: 23px; margin: 0 auto; letter-spacing: 0.2px; }
 
-.advantage { width: 100%; background-color: white; padding: 21px 31px 21px 90px; box-shadow: -3px 0 3px rgba(23, 23, 23, 0.33); position: relative; cursor: pointer; }
+.advantage { width: 100%; background-color: white; padding: 21px 31px 21px 90px; border-bottom: 1px solid rgba(23, 23, 23, 0.2); position: relative; cursor: pointer; }
 .advantage.active { background-color: #e6e6e6; }
 .advantage:hover { background-color: #e6e6e6; }
 
@@ -172,7 +172,7 @@ a, img, a:active, a:focus { outline: none; }
 .arrow-bottom { width: 0px; height: 0px; border-style: solid; border-width: 7px 4px 0 4px; border-color: #10a3ff transparent transparent transparent; position: absolute; right: 30px; top: 50%; transform: translateY(-50%); -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); -webkit-transition: all 0.5s ease 0s; -moz-transition: all 0.5s ease 0s; -o-transition: all 0.5s ease 0s; transition: all 0.5s ease 0s; }
 .arrow-bottom.active { transform: rotate(-180deg); }
 
-.dropdown-item { font-family: PFBeauSansPro-Regular; display: none; width: 100%; background-color: white; padding: 15px; box-shadow: -3px 0 3px rgba(23, 23, 23, 0.33); position: relative; }
+.dropdown-item { font-family: PFBeauSansPro-Regular; display: none; width: 100%; background-color: white; padding: 15px; border-bottom: 1px solid rgba(23, 23, 23, 0.2); position: relative; }
 .dropdown-item.active { display: block; }
 
 .emp-bottom { padding: 22px 20px 32px 20px; background-color: #f5f5f4; }
@@ -346,7 +346,8 @@ a, img, a:active, a:focus { outline: none; }
 
 .video__install { margin: 0 auto; margin-bottom: 57px; }
 
-.video { width: 281px; margin: 0 auto; }
+.video { padding-bottom: 56.25%; position: relative; }
+.video iframe { position: absolute; }
 
 .contact-us { text-align: center; }
 

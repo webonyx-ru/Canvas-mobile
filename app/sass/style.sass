@@ -11,7 +11,7 @@ $icons-spacing: 15px
     overflow: hidden
 
 .wrapper
-    max-width: 768px
+    //max-width: 768px
     min-width: 320px
     margin: 0 auto
     overflow: hidden
@@ -366,7 +366,7 @@ $icons-spacing: 15px
     width: 100%
     background-color: white
     padding: 21px 31px 21px 90px
-    box-shadow: -3px 0 3px rgba(23, 23, 23, 0.33)
+    border-bottom: 1px solid rgba(23, 23, 23, 0.20)
     position: relative
     cursor: pointer
     &.active
@@ -426,7 +426,7 @@ $icons-spacing: 15px
     width: 100%
     background-color: white
     padding: 15px
-    box-shadow: -3px 0 3px rgba(23, 23, 23, 0.33)
+    border-bottom: 1px solid rgba(23, 23, 23, 0.2)
     position: relative
     &.active
         display: block
@@ -948,8 +948,13 @@ $icons-spacing: 15px
     margin-bottom: 57px
 
 .video
-    width: 281px
-    margin: 0 auto
+    //width: 281px
+    padding-bottom: 56.25% /* 16:9 */
+    position: relative
+
+    iframe
+        position: absolute
+
 //CONTACTS
 
 .contact-us
